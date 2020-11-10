@@ -13,6 +13,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 #Instalar dependencias
 RUN apk add --no-cache gcc musl-dev linux-headers
+RUN apt-get install build-essential
 
 #Copia el fichero requirements.txt dentro de /code
 COPY requirements.txt /code/
