@@ -13,6 +13,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 #Instalar dependencias
 RUN apk add --no-cache gcc musl-dev linux-headers
+#Cambio para instalar apt-get
 RUN apk add apt-get
 RUN apt-get install build-essential
 
